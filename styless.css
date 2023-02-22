@@ -1,0 +1,132 @@
+/* elements comuns a tots els dispositius */
+body {
+    color: rgb(127, 127, 127);
+}
+
+header {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+button {
+    color: rgb(127, 127, 127);
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    color: rgb(211, 115, 100);
+}
+#text-background {
+    background-color: rgba(127, 127, 127, 0.3);
+    /* opacity: 0.8; */
+    width: 80%;
+    padding-top: 1.5rem;
+    position: sticky;
+    margin: auto;
+}
+#slogan {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(211, 115, 100);
+    font-size: 1.2rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* exercici 4 - nivell 2 --> header a mobile */
+    header {
+        background-size: 165%;
+        background-position-x: 0;
+        background-position-y: 40%;
+    }
+
+    .menu-box {
+        display: grid;
+        /* grid-template-columns: 0.5fr 0.75fr 0.75fr 0.75fr 0.75fr 0.75fr 0.25fr 0.25fr; */
+        /* grid-template-columns: 3rem 3rem 3rem 3rem 3rem 3rem 1.75rem 1.75rem; */
+        grid-auto-flow: row;
+        padding: 1rem;
+    }
+
+    #logo {
+        width: 2.5rem;
+        padding-bottom: 1rem;
+        position: right;
+    }
+
+    #inicio,
+    #rutas,
+    #hoteles,
+    #vuelos,
+    #contacto,
+    #twitter,
+    #facebook {
+        font-size: 0.75rem;
+        padding: 0.1rem;
+        margin-right: auto;
+    }
+
+    .imagen-header {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #slogan {
+        font-size: 0.80rem;
+    }
+
+}
+
+@media only screen and (min-width: 481px) {
+
+    /* exercici 4 - nivell 2 --> header per a tablet */
+    header {
+        background-position: 0 50%;
+    }
+
+    .menu-box {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+    }
+
+    #logo {
+        width: 2rem;
+    }
+
+    .imagen-header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    /* exercici 4 - nivell 2 --> header per a desktop */
+    header {
+        background-position: 0 50%;
+    }
+
+    .menu-box {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 1rem;
+    }
+
+    #logo {
+        width: 2rem;
+    }
+
+    .imagen-header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+}
