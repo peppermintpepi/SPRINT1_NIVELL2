@@ -1,6 +1,7 @@
 /* elements comuns a tots els dispositius */
 body {
     color: rgb(127, 127, 127);
+    font-size: 0.75rem;
 }
 
 header {
@@ -34,6 +35,63 @@ button:hover {
     position: relative;
     vertical-align: middle;
     text-align: center;
+}
+.main-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.articles-space {
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+    background-color: rgb(222, 221, 221);
+    margin-top: 0.75rem;
+    padding: 3%;
+}
+article {
+    background-color: rgb(238, 238, 238);
+    padding: 2%;
+}
+.article-title {
+    background-color: rgb(211, 115, 100);
+    width: auto;
+    padding: 2%;
+    color: aliceblue;
+}
+.article-text {
+    column-count: 2;
+}
+.leer {
+    color: rgb(157, 156, 156);
+}
+#info-articles {
+    color: rgb(46, 46, 46);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-bottom: 2%;
+}
+aside {
+    background-color: rgb(222, 221, 221);
+    color: rgb(46, 46, 46);
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    text-align: center;
+    padding: 5%;
+}
+img {
+    max-width: 100%;
+}
+footer {
+    background-color: rgb(218, 217, 217);
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+}
+#footer-square {
+    background-color: rgb(243, 241, 241);
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -108,7 +166,6 @@ button:hover {
 }
 
 @media only screen and (min-width: 769px) {
-
     /* exercici 4 - nivell 2 --> header per a desktop */
     header {
         background-position: 0 50%;
